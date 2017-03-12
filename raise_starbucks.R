@@ -12,10 +12,15 @@ counter <- 0
 
 # print every line that has 
 best_rate <- head(raise_data, 5)
+best_rate
+
+# create a txt document with raise rates
+write.table(Sys.time(), "data/raise_starbucks.txt",
+            sep = "", row.names = FALSE, quote = FALSE)
 
 # writes the table of best rate info
 write.table(best_rate, "data/raise_starbucks.txt",
-            sep = "", row.names = FALSE, quote = FALSE)
+            sep = "", row.names = FALSE, quote = FALSE, append = TRUE)
 
-
+# add other favorite credit cards
 
