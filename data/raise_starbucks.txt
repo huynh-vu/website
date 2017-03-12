@@ -1,0 +1,6 @@
+X..td.
+<td class='right'>$100.00</td>
+<td class='right'>5.0%</td>
+<td class='right'>
+<strong itemprop='price'>
+$95.00

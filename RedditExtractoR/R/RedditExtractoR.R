@@ -109,7 +109,7 @@ reddit_urls = function(search_terms=bonus,
 #' 
 #' @examples
 #' \dontrun{
-example_attr = reddit_content(URL="reddit.com/r/gifs/comments/39tzsy/whale_watching")
+example_attr = reddit_content(URL="")
 #' }
 #' 
 #' @param URL a string or a vector of strings with the URL address of pages of interest
