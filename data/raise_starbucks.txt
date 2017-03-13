@@ -1,9 +1,4 @@
 x
-2017-03-12 21:42:48
-V1
+2017-03-12 21:43:24
+x
 <td class='right'>8.0%</td>
-<td class='right'>
-<strong itemprop='price'>
-$92.00
-</strong>
-<p class='details'>+ Details</p>
