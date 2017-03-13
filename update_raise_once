@@ -1,0 +1,7 @@
+cd desktop/projects/website
+rscript raise_starbucks.r
+git add .
+git commit -m "updated raise rates"
+git push
+
+
