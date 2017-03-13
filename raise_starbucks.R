@@ -1,19 +1,16 @@
+library(tidyr)
+library(dplyr)
+
 # download file
 download.file("https://www.raise.com/buy-starbucks-coffee-gift-cards",destfile="data/raise.csv",method="libcurl")
 
 # read file 
-raise_data <- read.csv("data/raise.csv",header=TRUE, skip = 378)
+raise_data <- read.csv("data/raise.csv",header=FALSE, skip = 379)
 
 # print file
 str(raise_data)
 
-# set counter
-counter <- 0
-
-# print every line that has 
-
-best_rate <- substr(head(raise_data, 1), 13, 14)
-best_rate
+best_rate <- head(raise_data)
 
 # create a txt document with raise rates
 write.table(Sys.time(), "data/raise_starbucks.txt",
