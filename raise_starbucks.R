@@ -2,7 +2,7 @@
 download.file("https://www.raise.com/buy-starbucks-coffee-gift-cards",destfile="data/raise.csv",method="libcurl")
 
 # read file 
-raise_data <- read.csv("data/raise.csv",header=TRUE, skip = 379)
+raise_data <- read.csv("data/raise.csv",header=TRUE, skip = 378)
 
 # print file
 str(raise_data)
@@ -11,7 +11,8 @@ str(raise_data)
 counter <- 0
 
 # print every line that has 
-best_rate <- head(raise_data, 1)
+
+best_rate <- substr(head(raise_data, 1), 13, 14)
 best_rate
 
 # create a txt document with raise rates
