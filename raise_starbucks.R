@@ -1,6 +1,6 @@
 library(tidyr)
 library(dplyr)
-
+library(ggplot2)
 # download file
 download.file("https://www.raise.com/buy-starbucks-coffee-gift-cards",destfile="data/raise.csv",method="libcurl")
 
@@ -15,7 +15,11 @@ best_rate <- as.numeric(gsub("([0-9]+).*$", "\\1", substring(best_rate, 19, 22))
 
 # writes the table of best rate info
 write.table(best_rate, "data/raise_starbucks.csv",
-            sep = "", row.names = FALSE, quote = FALSE, append = TRUE)
+            sep = "", row.names = FALSE, quote = FALSE, append = TRUE, col.names = FALSE)
 
-# add other favorite credit cards
+# read compounded file
+compounded_starbucks <- read.csv("data/raise_starbucks.csv", header=FALSE)
+compounded_starbucks <- c(compounded_starbucks)
+compounded_starbucks
+
 
