@@ -1,9 +1,9 @@
 x
-2017-03-12 21:17:27
+2017-03-12 21:22:31
 V1
-<td class='right'>10.0%</td>
+<td class='right'>9.0%</td>
 <td class='right'>
 <strong itemprop='price'>
-$90.00
+$91.00
 </strong>
 <p class='details'>+ Details</p>
