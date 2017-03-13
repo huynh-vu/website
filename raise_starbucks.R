@@ -14,12 +14,9 @@ best_rate <- apply(head(raise_data, 1), 1, paste)
 best_rate <- as.numeric(gsub("([0-9]+).*$", "\\1", substring(best_rate, 19, 22)))
 
 # writes the table of best rate info
-write.table(best_rate, "data/raise_starbucks.txt",
+write.table(c(Sys.time(),best_rate), "data/raise_starbucks.txt",
             sep = "", row.names = FALSE, quote = FALSE, append = TRUE, col.names = FALSE)
 
-# read compounded file
-compounded_starbucks <- read.csv("data/raise_starbucks.txt", header=FALSE)
-compounded_starbucks <- c(compounded_starbucks)
-compounded_starbucks
+
 
 
