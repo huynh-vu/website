@@ -1,8 +1,8 @@
 x
-2017-03-12 18:55:30
+2017-03-12 23:30:53
 X..td.
 <td class='right'>$100.00</td>
-<td class='right'>5.0%</td>
+<td class='right'>7.0%</td>
 <td class='right'>
 <strong itemprop='price'>
-$95.00
+$93.00
