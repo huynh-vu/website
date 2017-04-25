@@ -105,7 +105,7 @@ function drop(ev) {
     }
     function updateTextInputFood(val) {
       document.getElementById('FoodInput').value=val; 
-      FoodOutput.value = parseInt(FoodInput.value) * 2.25;
+      FoodOutput.value = parseInt(FoodInput.value) * 4.5;
       TotalOutput.value = parseInt(RentOutput.value)
       	+ parseInt(FoodOutput.value)
       	+ parseInt(TransportationOutput.value)
@@ -224,8 +224,8 @@ function drop(ev) {
 									<input type="label" id="FoodInput" value="500" style="width:50px" onchange="updateFoodSlider(this.value);">
 								</td>
 								<td>
-									x <input type="label" value="3.0" style="width:50px" disabled> =
-									<input type="label" id="FoodOutput" value="1500" style="width:75px" disabled>
+									x <input type="label" value="4.5" style="width:50px" disabled> =
+									<input type="label" id="FoodOutput" value="2250" style="width:75px" disabled>
 								</td>
 							</tr>
 							<tr>
@@ -293,9 +293,9 @@ function drop(ev) {
 					<table>
 							<tr>
 								<td>
-									<input type="label" id="TotalOutput" value="5297" style="width:75px" disabled> points per month
+									<input type="label" id="TotalOutput" value="6047" style="width:75px" disabled> points per month
 									<br>
-									<input type="label" id="TotalOutputAnnual" value="63564" style="width:75px" disabled> points per year
+									<input type="label" id="TotalOutputAnnual" value="72564" style="width:75px" disabled> points per year
 									
 									
 								</td>
