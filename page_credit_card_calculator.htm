@@ -94,7 +94,7 @@ function drop(ev) {
 /*update sliders calculation*/
 	function updateTextInputRent(val) {
       document.getElementById('RentInput').value=val; 
-      RentOutput.value = parseInt(RentInput.value) * 2.25;
+      RentOutput.value = parseInt(RentInput.value) * .25;
       TotalOutput.value = parseInt(RentOutput.value)
       	+ parseInt(FoodOutput.value)
       	+ parseInt(TransportationOutput.value)
@@ -206,11 +206,11 @@ function drop(ev) {
 									<input type="range" name="RangeInputRent" step="10" min="0" max="2000" value="1350" onchange="updateTextInputRent(this.value);">
 								</td>
 								<td width = "50px">
-									<input type="label" id="RentInput" value="1260" style="width:50px" onchange="updateRentSlider(this.value);">
+									<input type="label" id="RentInput" value="1350" style="width:50px" onchange="updateRentSlider(this.value);">
 								</td>
 								<td width = "300px" align = "right">
-									x <input type="label" value="2.25" style="width:50px" disabled> =
-									<input type="label" id="RentOutput" value="3037.5" style="width:75px" disabled>
+									x <input type="label" value=".25" style="width:50px" disabled> =
+									<input type="label" id="RentOutput" value="337.5" style="width:75px" disabled>
 								</td>
 							</tr>
 							<tr>
@@ -293,9 +293,9 @@ function drop(ev) {
 					<table>
 							<tr>
 								<td>
-									<input type="label" id="TotalOutput" value="6249.5" style="width:75px" disabled> points per month
+									<input type="label" id="TotalOutput" value="3549.5" style="width:75px" disabled> points per month
 									<br>
-									<input type="label" id="TotalOutputAnnual" value="74994" style="width:75px" disabled> points per year
+									<input type="label" id="TotalOutputAnnual" value="42594" style="width:75px" disabled> points per year
 									
 									
 								</td>
