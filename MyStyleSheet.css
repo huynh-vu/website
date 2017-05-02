@@ -17,9 +17,9 @@ body
 #map
 {
     z-index: 1;
-    position: relative;
+    position: absolute;
     text-align: center;
-    float: left;
+    float: top;
     height: 100%;
     width: 100%;
 }
@@ -395,14 +395,6 @@ label{
     text-align: right;
 }
 
-input{
-    position: relative; 
-    width:40px;
-    text-align: right;
-    background: white;
-    height: 18px;
-}
-
 li{
     margin-left: -1px;
     margin-top: 1px;
@@ -430,33 +422,9 @@ li{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
-  margin: 3.5px 0;
 }
 input[type=range]:focus {
   outline: none;
@@ -539,6 +507,16 @@ input[type=range]:focus::-ms-fill-upper {
   background: #0088cf;
 }
 
+.input-group
+{
+  height: 28px;
+}
 
+a
+{
+  color: white;
+  font-size: 14px;
+  font-family: helvetica;
+}
 
 
