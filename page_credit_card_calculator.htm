@@ -1,7 +1,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Huynh Vu</title>
+	<title>The Points Kid</title>
 
 	<!-- Tab Icon-->
 	<link rel="shortcut icon" href="images\nerd_glasses.ico"/>
@@ -35,7 +35,7 @@
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value));
+      	+ parseInt(PersonalOutput.value)) / 100;
       document.getElementById('RangeInputRent').value=val;
     }
     function updateTextInputGrocery(val) {
@@ -46,7 +46,7 @@
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value)); 
+      	+ parseInt(PersonalOutput.value)) / 100; 
       document.getElementById('RangeInputGrocery').value=val;
     }
     function updateTextInputGas(val) {
@@ -57,7 +57,7 @@
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value));
+      	+ parseInt(PersonalOutput.value)) / 100;
       document.getElementById('RangeInputGas').value=val;
     }
     function updateTextInputInsurance(val) {
@@ -68,7 +68,7 @@
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value));
+      	+ parseInt(PersonalOutput.value)) / 100;
       document.getElementById('RangeInputInsurance').value=val;
     }
     function updateTextInputTravel(val) {
@@ -79,7 +79,7 @@
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value));
+      	+ parseInt(PersonalOutput.value)) / 100;
       document.getElementById('RangeInputTravel').value=val;
     }
     function updateTextInputPersonal(val) {
@@ -90,7 +90,7 @@
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value));
+      	+ parseInt(PersonalOutput.value)) / 100;
       document.getElementById('RangeInputPersonal').value=val;
     }
 
@@ -203,11 +203,11 @@
 						
 						</form>
 						<center>
-						<div class="input-group" style="width:250px">
-							<input type="text" class="form-control" id="TotalOutput" value="5251">
-							<span class="input-group-addon">total points per month</span>
-							
+						<div class="input-group" style="width:110px; text-align:center;">
+							<span class="input-group-addon">$</span>
+							<input type="text" class="form-control" id="TotalOutput" value="52.51">
 						</div>
+			
 
 
 
