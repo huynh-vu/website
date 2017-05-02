@@ -526,3 +526,9 @@ a:hover
   text-decoration-line: none;
 }
 
+.currencyinput {
+    border: 1px inset #ccc;
+}
+.currencyinput input {
+    border: 0;
+}

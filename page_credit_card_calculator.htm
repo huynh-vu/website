@@ -132,19 +132,20 @@
 					<div class= "right">
 						<form>
 						<div class="input-group">
+
 							<span class="input-group-addon" style="width:100px">Rent</span>
-							<input class="form-control" type="range" style="width:150px" id="RangeInputRent" name="RangeInputRent" step="10" min="0" max="2000" value="1350" oninput="updateTextInputRent(this.value);">
+							<input class="form-control" type="range" style="width:150px" id="RangeInputRent" name="RangeInputRent" step="10" min="0" max="2700" value="1350" oninput="updateTextInputRent(this.value);">
 							<span class="input-group-addon">$</span>
 							<input type="text" class="form-control" id="RentInput" value="1350" style="width:40px; text-align:right;" oninput="updateTextInputRent(this.value)" aria-label="Amount (to the nearest dollar)">
 							<span class="input-group-addon">x</span>
 							<input type="text" class="form-control" value="0.25" style="width:35px; text-align:center;" disabled>
 							<span class="input-group-addon">=</span>
-							<input type="label" class="form-control" id="RentOutput" value="338" style="width:40px; text-align:right;" disabled>
+							<input type="label" class="form-control" id="RentOutput" value="338" style="width:40px; text-align:right;" disabled>	
 						</div>
 
 						<div class="input-group">
 							<span class="input-group-addon" style="width:100px">Grocery</span>
-							<input class="form-control" type="range" style="width:150px" id="RangeInputGrocery" name="RangeInputGrocery" step="10" min="0" max="2000" value="300" oninput="updateTextInputGrocery(this.value);">
+							<input class="form-control" type="range" style="width:150px" id="RangeInputGrocery" name="RangeInputGrocery" step="10" min="0" max="600" value="300" oninput="updateTextInputGrocery(this.value);">
 							<span class="input-group-addon">$</span>
 							<input type="text" class="form-control" id="GroceryInput" value="300" style="width:40px; text-align:right;" oninput="updateTextInputGrocery(this.value);" aria-label="Amount (to the nearest dollar)">
 							<span class="input-group-addon">x</span>
@@ -156,7 +157,7 @@
 
 						<div class="input-group">
 							<span class="input-group-addon" style="width:100px">Gas</span>
-							<input class="form-control" type="range" style="width:150px" id="RangeInputGas" name="RangeInputGas" step="10" min="0" max="2000" value="150" oninput="updateTextInputGas(this.value);">
+							<input class="form-control" type="range" style="width:150px" id="RangeInputGas" name="RangeInputGas" step="10" min="0" max="300" value="150" oninput="updateTextInputGas(this.value);">
 							<span class="input-group-addon">$</span>
 							<input type="text" class="form-control" id="GasInput" value="150" style="width:40px; text-align:right;" oninput="updateTextInputGas(this.value);" aria-label="Amount (to the nearest dollar)">
 							<span class="input-group-addon">x</span>
@@ -168,7 +169,7 @@
 
 						<div class="input-group">
 							<span class="input-group-addon" style="width:100px">Insurance</span>
-							<input class="form-control" type="range" style="width:150px" id="RangeInputInsurance" name="RangeInputInsurance" step="10" min="0" max="2000" value="100" oninput="updateTextInputInsurance(this.value);">
+							<input class="form-control" type="range" style="width:150px" id="RangeInputInsurance" name="RangeInputInsurance" step="10" min="0" max="500" value="250" oninput="updateTextInputInsurance(this.value);">
 							<span class="input-group-addon">$</span>
 							<input type="text" class="form-control" id="InsuranceInput" value="250" style="width:40px; text-align:right;" oninput="updateTextInputInsurance(this.value);" aria-label="Amount (to the nearest dollar)">
 							<span class="input-group-addon">x</span>
@@ -180,7 +181,7 @@
 
 						<div class="input-group">
 							<span class="input-group-addon" style="width:100px">Travel</span>
-							<input class="form-control" type="range" style="width:150px" id="RangeInputTravel" name="RangeInputTravel" step="10" min="0" max="2000" value="250" oninput="updateTextInputTravel(this.value);">
+							<input class="form-control" type="range" style="width:150px" id="RangeInputTravel" name="RangeInputTravel" step="10" min="0" max="500" value="250" oninput="updateTextInputTravel(this.value);">
 							<span class="input-group-addon">$</span>
 							<input type="text" class="form-control" id="TravelInput" value="250" style="width:40px; text-align:right;" oninput="updateTextInputTravel(this.value);" aria-label="Amount (to the nearest dollar)">
 							<span class="input-group-addon">x</span>
@@ -192,7 +193,7 @@
 
 						<div class="input-group">
 							<span class="input-group-addon" style="width:100px">Personal</span>
-							<input class="form-control" type="range" style="width:150px" id="RangeInputPersonal" name="RangeInputPersonal" step="10" min="0" max="2000" value="100" oninput="updateTextInputPersonal(this.value);">
+							<input class="form-control" type="range" style="width:150px" id="RangeInputPersonal" name="RangeInputPersonal" step="10" min="0" max="450" value="225" oninput="updateTextInputPersonal(this.value);">
 							<span class="input-group-addon">$</span>
 							<input type="text" class="form-control" id="PersonalInput" value="100" style="width:40px; text-align:right;" oninput="updateTextInputPersonal(this.value);" aria-label="Amount (to the nearest dollar)">
 							<span class="input-group-addon">x</span>
@@ -203,11 +204,17 @@
 						
 						</form>
 						<center>
+						<div class="input-group" style="width:210px; text-align:center;">
+
+							<input type="text" class="form-control" id="TotalOutput" value="5251">
+							<span class="input-group-addon">points per month</span>
+						</div>
+						OR
 						<br>
-						<div class="input-group" style="width:250px; text-align:center;">
+						<div class="input-group" style="width:200px; text-align:center;">
 							<span class="input-group-addon">$</span>
 							<input type="text" class="form-control" id="TotalOutput" value="52.51">
-							<span class="input-group-addon">saved per month</span>
+							<span class="input-group-addon">per month</span>
 						</div>
 			
 
