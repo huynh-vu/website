@@ -3,7 +3,6 @@ library(dplyr)
 library(ggplot2)
 # download file
 download.file("https://www.raise.com/buy-starbucks-coffee-gift-cards",destfile="data/raise.csv",method="libcurl")
-
 # read file 
 raise_data <- read.csv("data/raise.csv",header=FALSE, skip = 379)
 

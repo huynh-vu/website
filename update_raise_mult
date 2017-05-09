@@ -5,7 +5,7 @@ do
 	git add .
 	git commit -m "updated raise rates"
 	git push
-  	sleep 300s
+  	sleep 900s
 done
 
 
