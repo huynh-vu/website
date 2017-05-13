@@ -29,67 +29,73 @@
 	function updateTextInputRent(val) {
       RentInput.value=val; 
       RentOutput.value = Math.round(parseInt(RentInput.value) * .25);
-      TotalOutput.value = Math.round(parseInt(RentOutput.value)
+      TotalOutputPoints.value = Math.round(parseInt(RentOutput.value)
       	+ parseInt(GroceryOutput.value)
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value)) / 100;
+      	+ parseInt(PersonalOutput.value));
+      TotalOutputDollars.value = TotalOutputPoints.value / 100;
       document.getElementById('RangeInputRent').value=val;
     }
     function updateTextInputGrocery(val) {
       document.getElementById('GroceryInput').value=val; 
       GroceryOutput.value = Math.round(parseInt(GroceryInput.value) * 7.5);
-      TotalOutput.value = Math.round(parseInt(RentOutput.value)
+      TotalOutputPoints.value = Math.round(parseInt(RentOutput.value)
       	+ parseInt(GroceryOutput.value)
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value)) / 100; 
+      	+ parseInt(PersonalOutput.value)); 
+      TotalOutputDollars.value = TotalOutputPoints.value / 100;
       document.getElementById('RangeInputGrocery').value=val;
     }
     function updateTextInputGas(val) {
       document.getElementById('GasInput').value=val; 
       GasOutput.value = Math.round(parseInt(GasInput.value) * 5);
-      TotalOutput.value = Math.round(parseInt(RentOutput.value)
+      TotalOutputPoints.value = Math.round(parseInt(RentOutput.value)
       	+ parseInt(GroceryOutput.value)
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value)) / 100;
+      	+ parseInt(PersonalOutput.value));
+      TotalOutputDollars.value = TotalOutputPoints.value / 100;
       document.getElementById('RangeInputGas').value=val;
     }
     function updateTextInputInsurance(val) {
       document.getElementById('InsuranceInput').value=val; 
       InsuranceOutput.value = Math.round(parseInt(InsuranceInput.value) * 2.25);
-      TotalOutput.value = Math.round(parseInt(RentOutput.value)
+      TotalOutputPoints.value = Math.round(parseInt(RentOutput.value)
       	+ parseInt(GroceryOutput.value)
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value)) / 100;
+      	+ parseInt(PersonalOutput.value));
+      TotalOutputDollars.value = TotalOutputPoints.value / 100;
       document.getElementById('RangeInputInsurance').value=val;
     }
     function updateTextInputTravel(val) {
       document.getElementById('TravelInput').value=val; 
       TravelOutput.value = Math.round(parseInt(TravelInput.value) * 4.5);
-      TotalOutput.value = Math.round(parseInt(RentOutput.value)
+      TotalOutputPoints.value = Math.round(parseInt(RentOutput.value)
       	+ parseInt(GroceryOutput.value)
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value)) / 100;
+      	+ parseInt(PersonalOutput.value));
+      TotalOutputDollars.value = TotalOutputPoints.value / 100;
       document.getElementById('RangeInputTravel').value=val;
     }
     function updateTextInputPersonal(val) {
       document.getElementById('PersonalInput').value=val; 
       PersonalOutput.value = Math.round(parseInt(PersonalInput.value) * 2.25);
-      TotalOutput.value = Math.round(parseInt(RentOutput.value)
+      TotalOutputPoints.value = Math.round(parseInt(RentOutput.value)
       	+ parseInt(GroceryOutput.value)
       	+ parseInt(GasOutput.value)
       	+ parseInt(InsuranceOutput.value)
       	+ parseInt(TravelOutput.value)
-      	+ parseInt(PersonalOutput.value)) / 100;
+      	+ parseInt(PersonalOutput.value));
+      TotalOutputDollars.value = TotalOutputPoints.value / 100;
       document.getElementById('RangeInputPersonal').value=val;
     }
 </script>
@@ -188,21 +194,22 @@
 							<span class="input-group-addon">=</span>
 							<input type="label" class="form-control" id="PersonalOutput" value="225" style="width:40px; text-align:right;" disabled>
 						</div>
-						
-						</form>
+						<br>
 						<center>
-						<div class="input-group" style="width:210px; text-align:center;">
-
-							<input type="text" class="form-control" id="TotalOutput" value="5251">
+						<div class="input-group" style="width:220px; text-align:center;">
+							<input type="text" class="form-control" id="TotalOutputPoints" value="5251">
 							<span class="input-group-addon">points per month</span>
 						</div>
 						OR
 						<br>
-						<div class="input-group" style="width:200px; text-align:center;">
+						<div class="input-group" style="width:210px; text-align:center;">
 							<span class="input-group-addon">$</span>
-							<input type="text" class="form-control" id="TotalOutput" value="52.51">
+							<input type="text" class="form-control" id="TotalOutputDollars" value="52.51">
 							<span class="input-group-addon">per month</span>
 						</div>
+						</form>
+						<center>
+						
 	
 						<br>
 					</div>
@@ -214,7 +221,10 @@
 <br>
 <br>
 </center>
-
+<!-- DO NOT MOVE THIS SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>

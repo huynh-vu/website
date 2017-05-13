@@ -20,6 +20,10 @@ newdata <- aggregate(newdata$Amount, by=list(Account.Name=newdata$Account.Name),
 newdata
 
 
+
+
+
+
 as.Date(dates, format = "%m/%d/%y") 
 
 
