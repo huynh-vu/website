@@ -16,6 +16,3 @@ best_rate <- as.numeric(gsub("([0-9]+).*$", "\\1", substring(best_rate, 19, 22))
 write.table(paste(toString(Sys.time()), best_rate, sep = " "), "data/raise_starbucks.txt",
             sep = "", row.names = FALSE, quote = FALSE, append = TRUE, col.names = FALSE)
 
-
-
-

@@ -17,9 +17,9 @@ body
 #map
 {
     z-index: 1;
-    position: absolute;
+    position: relative;
     text-align: center;
-    float: top;
+    float: left;
     height: 100%;
     width: 100%;
 }
