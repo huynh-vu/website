@@ -1,0 +1,7 @@
+cd desktop/projects/website
+git add .
+git commit -m "updated website"
+git push
+
+
+
