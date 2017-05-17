@@ -1,4 +1,6 @@
 cd desktop/projects/website
+rscript raise_starbucks.r
+rscript stocks.r
 git add .
 git commit -m "updated website"
 git push
