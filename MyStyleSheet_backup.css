@@ -1,10 +1,9 @@
 body
 {	
-    background-image: url('images/background.jpg');
+    background-image: url('images/dark_background.png');
     background-repeat: stretch;
     background-attachment: auto;
     background-size: 100% 100%;
-
 }
 
 /*    
@@ -30,7 +29,6 @@ body
     width: 670px;
     height: 700px;
     z-index: 2;
-    opacity: .88;
 }
 
 .inner-container
@@ -38,11 +36,11 @@ body
 z-index: 3;
 position: absolute;
 background: white;
-top: 345px;
+top: 285px;
 margin-left: -5px;
 width: 650px;
-height: 290px;
-opacity: .88;
+height: 490px;
+
 border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -63,12 +61,13 @@ border-radius: 5px 5px 5px 5px;
 {
 z-index: 4;
 position: absolute;
+background: #333333;
 color: white;
 padding: 15px;
-top: 350px;
+top:290px;
 width: 640px;
-height: 280px;
-opacity: .9;
+height: 480px;
+
 border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -112,6 +111,7 @@ text-shadow: 3px 3px 3px black;
     margin-bottom: auto;
     overflow: hidden;
     height:105px;
+
 }
 
 .left
@@ -154,11 +154,10 @@ text-shadow: 3px 3px 3px black;
     position: relative;
     font-size: 12px;
     float: left;
-    top: 300px;
     display: table-cell;
-    height: 255px;
+    height: 285px;
     width: 610px;
-    padding
+    background-image: url('images/light_background.png'); 
     padding-top: 12px;
     padding-right: 20px;
     padding-bottom: 9px;
@@ -173,13 +172,22 @@ text-shadow: 3px 3px 3px black;
     overflow: hidden;
     text-align: left;
     word-wrap: break-word;
+    -moz-box-shadow:
+        0px 2px 2px rgba(000,000,000,0.5),
+        inset 1 1 10px rgba(255,255,255,0.4);
+    -webkit-box-shadow:
+        2px 2px 2px rgba(000,000,000,0.5),
+        inset 3px 3px 7px rgba(255,255,255,0.4);
+    box-shadow:
+        0px 2px 2px rgba(000,000,000,0.5),
+        inset 1 -35px 35px -18px rgba(255,255,255,0.4);
     text-shadow:
         1px 1px 1px rgba(000,000,000,0.2),
         0px 1px 0px rgba(255,255,255,0.4);
     font-family: helvetica;
     font-size: 10px;
     text-align: justify;
-    opacity: .9;
+    border-left: thick solid #0077B5;
 }
 
 /*
@@ -523,45 +531,4 @@ a:hover
 }
 .currencyinput input {
     border: 0;
-}
-
-.img-circle-huynh {
-    border-radius: 50%;
-    height: 175px;
-    width: 175px;
-    padding: 5px;
-    background: #007bb6;
-       -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-box-shadow:
-        0px 0px 3px 3px rgba(000,000,000,0.6),
-        inset 1 1 10px rgba(255,255,255,0.4);
-    -webkit-box-shadow:
-        0px 0px 3px 3px rgba(000,000,000,0.6),
-        inset 3px 1px 7px rgba(255,255,255,0.4);
-    box-shadow:
-        0px 0px 3px 3px rgba(000,000,000,0.6),
-        inset 1 -35px 35px -18px rgba(255,255,255,0.4);
-    margin: 6px;
-
-}
-.img-circle-lucie {
-    border-radius: 50%;
-    height: 175px;
-    width: 175px;
-    padding: 5px;
-    background: #ff69b4;
-       -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-box-shadow:
-        0px 0px 3px 3px rgba(000,000,000,0.6),
-        inset 1 1 10px rgba(255,255,255,0.4);
-    -webkit-box-shadow:
-        0px 0px 3px 3px rgba(000,000,000,0.6),
-        inset 3px 1px 7px rgba(255,255,255,0.4);
-    box-shadow:
-        0px 0px 3px 3px rgba(000,000,000,0.6),
-        inset 1 -35px 35px -18px rgba(255,255,255,0.4);
-    margin: 6px;
-
 }
